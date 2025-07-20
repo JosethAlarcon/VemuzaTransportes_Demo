@@ -1,0 +1,26 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build results
+**/bin/
+**/obj/
+
+# Node.js
+Frontend/node_modules/
+Frontend/build/
+
+# Otros
+*.log
+*.cache
+*.pdb
+*.exe
+*.dll
+*.vsidx
+
+# Base de datos
+*.mdf
+*.ldf
+*.bak
+
