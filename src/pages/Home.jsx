@@ -11,7 +11,7 @@ import facilImg from '../assets/facil.png'
 import rapidoImg from '../assets/rapido.png'
 import seguroImg from '../assets/seguro.png'
 import puntualImg from '../assets/puntual.png'
-
+import BannerVemuza from '../assets/BannerVemuza.png';
 
 export default function Home() {
     const scrollRef = useRef(null)
@@ -31,8 +31,8 @@ export default function Home() {
                 {/* IMAGEN BANNER */}
                 <div className="relative h-56 sm:h-64 md:h-80 lg:h-96 overflow-hidden">
                     <img
-                        src="/src/assets/BannerVemuza.png"
-                        alt="Banner Vemuza"
+                        src={BannerVemuza}
+                        alt="BannerVemuza"
                         className="w-full h-full object-cover"
                     />
                 </div>
