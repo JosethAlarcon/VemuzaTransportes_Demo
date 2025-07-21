@@ -41,7 +41,7 @@ export default function FormularioReserva() {
         const obtenerCotizacion = async () => {
             if ((tipo === 'flete' || tipo === 'mudanza') && inicio && destino) {
                 try {
-                    const respuesta = await fetch('https://localhost:7125/api/cotizador', {
+                    const respuesta = await fetch(`${import.meta.env.VITE_API_URL}/cotizador`, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ direccionInicio: inicio, direccionDestino: destino })
