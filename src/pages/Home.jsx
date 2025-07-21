@@ -28,19 +28,15 @@ export default function Home() {
         <div className="relative min-h-screen flex flex-col justify-between bg-white  from-blue-100 via-white to-green-100 text-gray-800">
             {/* SLIDER + LOGO */}
             <div className="relative z-10">
-                {/* VIDEO BANNER */}
+                {/* IMAGEN BANNER */}
                 <div className="relative h-56 sm:h-64 md:h-80 lg:h-96 overflow-hidden">
-                    <video
+                    <img
+                        src="/src/assets/BannerVemuza.png"
+                        alt="Banner Vemuza"
                         className="w-full h-full object-cover"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                    >
-                        <source src="/src/assets/banner.mp4" type="video/mp4" />
-                        Tu navegador no admite la reproducción de video.
-                    </video>
+                    />
                 </div>
+
 
                 {/* LOGO FUERA DEL VIDEO, SOBRE TODO */}
                 <div className="absolute left-1/2 top-[calc(100%_-_8rem)] transform -translate-x-1/2 z-50">
